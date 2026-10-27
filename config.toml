@@ -1,0 +1,30 @@
+watch_dir = "~/Downloads/archives"
+
+# Пусто/не указано = распаковывать рядом с архивом
+# extract_root = "~/Downloads/archives/extracted"
+
+formats = [".zip", ".tar", ".tar.gz", ".tgz", ".tar.bz2", ".tbz2", ".tar.xz", ".txz", ".7z", ".rar"]
+
+# keep | delete | move
+remove_after = "keep"
+# move_to = "~/Downloads/archives/_done"
+
+ignore_globs = ["*.backup.zip", "_*.zip", "*.partial.*"]
+
+# Ждать, пока файл не перестанет менятся N секунд (детект незавершённых загрузок)
+stability_seconds = 5
+stability_timeout = 300
+
+# Вложенные архивы
+recursive_nested = false
+max_depth = 2
+
+# Чистить __MACOSX, .DS_Store, Thumbs.db
+clean_junk = true
+
+notify = true
+log_level = "INFO"
+# log_file = "~/.local/state/auto-unpack/auto-unpack.log"   # по умолчанию там же
+
+# Пароли к архивам (пробуются по порядку). Также кэшируются в state.json после успешного retry.
+passwords = []

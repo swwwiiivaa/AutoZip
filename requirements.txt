@@ -1,0 +1,5 @@
+watchdog>=3.0
+tomli>=2.0; python_version < "3.11"
+# опционально:
+py7zr>=0.20        ; extra == "7z"
+rarfile>=4.0       ; extra == "rar"   # + нужен unrar/unar/7z в системе
